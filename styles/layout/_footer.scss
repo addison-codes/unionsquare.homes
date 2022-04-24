@@ -34,4 +34,15 @@
 		.body.is-loading & {
 			opacity: 0;
 		}
+
+		.imagebox {
+			display: flex;
+			margin-bottom: 5rem;
+			gap: 20px;
+			justify-content: center;
+
+			img {
+				max-width: 300px;
+			}
+		}
 	}
