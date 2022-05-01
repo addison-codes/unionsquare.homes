@@ -4,16 +4,27 @@ const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <h2>Your Union Square Team:</h2>
     <div className="imagebox">
-      <img src="/static/images/Headshot Nick.jpg" alt="Nick Headshot" />
-      <img src="/static/images/Screen Shot 2022-03-14 at 12.13.19 PM.png" alt="Danielle Headshot" />
+    <a href="javascript:;" onClick={() => { props.onOpenArticle('nick'); }}>
+      <div className="bio">
+        <img src="/static/images/Headshot Nick.jpg" alt="Nick Headshot" />
+        <p>Nicholas McAnallen</p>
+      </div>
+    </a>
+    <a href="javascript:;" onClick={() => { props.onOpenArticle('danielle'); }}>
+      <div className="bio">
+        <img src="/static/images/Danielle Headshot.png" alt="Danielle Headshot" />
+        <p>Danielle Crilley</p>
+      </div>
+    </a>
     </div>
     <p className="copyright">
-      &copy; Union Square | Built by: <a href="https://polyp.dev">Polyp</a>
+      &copy;2022 | Built by: <a href="https://polyp.dev">Polyp</a>
     </p>
   </footer>
 );
 
 Footer.propTypes = {
+  onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
 };
 

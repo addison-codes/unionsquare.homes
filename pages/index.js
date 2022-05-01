@@ -88,10 +88,14 @@ class IndexPage extends React.Component {
               article={this.state.article}
               onCloseArticle={this.handleCloseArticle}
             />
-            <Footer timeout={this.state.timeout} />
+            <Footer onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
           </div>
 
-          <div id="bg" />
+          <div id="bg">
+            <video autoPlay muted loop>
+              <source src='/static/video/UnionSquareVideo.mp4' type='video/mp4' />
+            </video>
+          </div>
         </div>
       </div>
     );

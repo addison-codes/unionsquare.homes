@@ -14,7 +14,7 @@
 		));
 		width: 100%;
 		max-width: 100%;
-		margin-top: 2rem;
+		margin-top: 4rem;
 		text-align: center;
 
 		.copyright {
@@ -35,14 +35,27 @@
 			opacity: 0;
 		}
 
+		a {
+			border-bottom: none;
+		}
+
 		.imagebox {
 			display: flex;
 			margin-bottom: 5rem;
-			gap: 20px;
+			margin-top: 2rem;
+			gap: 10%;
 			justify-content: center;
 
 			img {
 				max-width: 300px;
+				max-height: 300px;
+				clip-path: circle(150px at center);
 			}
+
+			p {
+				text-transform: uppercase;
+				letter-spacing: .2rem;
+			}
+
 		}
 	}

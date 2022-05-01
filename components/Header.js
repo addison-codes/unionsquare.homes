@@ -24,40 +24,40 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('intro');
+              props.onOpenArticle('history');
             }}
           >
-            Why Union Square
+            History
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('work');
+              props.onOpenArticle('perks');
             }}
           >
-            Amenities
+            Perks
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('about');
+              props.onOpenArticle('pics');
             }}
           >
-            Gallery
+            Pics
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('contact');
+              props.onOpenArticle('buy');
             }}
           >
-            Send Message
+            Buy
           </a>
         </li>
       </ul>

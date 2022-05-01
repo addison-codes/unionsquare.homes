@@ -19,13 +19,43 @@ class Main extends React.Component {
     return (
       <div id="main" style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
+          id="nick"
+          className={`${this.props.article === 'nick' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className="major">About Nick</h2>
           <span className="image main">
-            <img src="/static/images/pic01.jpg" alt="" />
+            <img src="/static/images/Headshot Nick.jpg" alt="Union Square Nick" />
+          </span>
+          <p>
+          Hey Neighbor! My name is Nick and I have lived in the building since 2017. I have been in real estate for 5 years and pride myself in being the knowledgeable go-to Realtor in Union Square. If you're thinking about buying or selling in 2022, I'd love to chat. Feel free to contact me about your real estate goals for the new year!
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="danielle"
+          className={`${this.props.article === 'danielle' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">About Danielle</h2>
+          <span className="image main">
+            <img src="/static/images/Danielle Headshot.png" alt="Union Square Danielle" />
+          </span>
+          <p>
+          With over 10 years' experience in finance and banking, Danielle is your local expert for all things mortgage and lending related. Her experience in lending lead her to Treadstone Funding in 2018. Danielle is backed by an incredible team that focuses on the customer experience, transparency, and quick turnaround. As a 2 year resident and owner in Union Square, Danielle is excited to continue to assist her neighbors and friends with their condo purchases and refinances.
+          </p>
+          {close}
+        </article>
+
+        <article
+          id="history"
+          className={`${this.props.article === 'history' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Union Square History</h2>
+          <span className="image main">
+            <img src="/static/images/Union Square History.jpg" alt="" />
           </span>
           <p>
             Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet
@@ -43,8 +73,8 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
+          id="perks"
+          className={`${this.props.article === 'perks' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className="major">About Danielle</h2>
@@ -64,8 +94,8 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
+          id="pics"
+          className={`${this.props.article === 'pics' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Gallery</h2>
@@ -81,8 +111,8 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
+          id="buy"
+          className={`${this.props.article === 'buy' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
