@@ -79,7 +79,7 @@ class Main extends React.Component {
           className={`${this.props.article === 'perks' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About Danielle</h2>
+          <h2 className="major">Perks & Amenities</h2>
           <span className="image main">
             <img src="/static/images/pic02.jpg" alt="" />
           </span>
@@ -100,7 +100,7 @@ class Main extends React.Component {
           className={`${this.props.article === 'pics' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Gallery</h2>
+          <h2 className="major">Photo Gallery</h2>
           <Gallery photos={photos} />
           {close}
         </article>
@@ -110,7 +110,7 @@ class Main extends React.Component {
           className={`${this.props.article === 'buy' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
+          <h2 className="major">Contact Us</h2>
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
