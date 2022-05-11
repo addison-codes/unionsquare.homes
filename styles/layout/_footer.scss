@@ -43,13 +43,14 @@
 			display: flex;
 			margin-bottom: 5rem;
 			margin-top: 2rem;
-			gap: 10%;
+			gap: 5vw;
 			justify-content: center;
 
 			img {
 				max-width: 300px;
+				width: 50vw;
 				max-height: 300px;
-				clip-path: circle(150px at center);
+				clip-path: circle(50% at center);
 			}
 
 			p {
