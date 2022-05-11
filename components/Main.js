@@ -6,6 +6,7 @@ import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import Gallery from 'react-photo-gallery';
 import { photos } from './photos';
+import React from 'react';
 
 class Main extends React.Component {
   render() {

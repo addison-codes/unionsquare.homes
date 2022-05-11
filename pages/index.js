@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import stylesheet from 'styles/main.scss';
+import React from 'react';
 
 import Header from '../components/Header';
 import Main from '../components/Main';
@@ -77,7 +77,7 @@ class IndexPage extends React.Component {
             <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i" rel="stylesheet" />
           </Head>
 
-          <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+          {/* <style dangerouslySetInnerHTML={{ __html: stylesheet }} /> */}
 
           <div id="wrapper">
             <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
