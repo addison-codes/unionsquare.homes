@@ -6,13 +6,13 @@ const Footer = props => (
     <div className="imagebox">
     <a href="javascript:;" onClick={() => { props.onOpenArticle('nick'); }}>
       <div className="bio">
-        <img src="/static/images/Headshot Nick.jpg" alt="Nick Headshot" />
+        <img src="/Headshot Nick.jpg" alt="Nick Headshot" />
         <p>Nicholas McAnallen</p>
       </div>
     </a>
     <a href="javascript:;" onClick={() => { props.onOpenArticle('danielle'); }}>
       <div className="bio">
-        <img src="/static/images/Danielle Headshot.png" alt="Danielle Headshot" />
+        <img src="/Danielle Headshot.png" alt="Danielle Headshot" />
         <p>Danielle Crilley</p>
       </div>
     </a>
