@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
-import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebook';
-import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
-import Gallery from 'react-photo-gallery';
+import Gallery from 'react-photo-album';
 import { photos } from './photos';
 import React from 'react';
 
@@ -134,7 +130,7 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
-          <ul className="icons">
+          {/* <ul className="icons">
             <li>
               <a href="#">
                 <FontAwesomeIcon icon={faTwitter} />
@@ -155,7 +151,7 @@ class Main extends React.Component {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
-          </ul>
+          </ul> */}
           {close}
         </article>
       </div>

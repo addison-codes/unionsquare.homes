@@ -15,8 +15,8 @@
   "dependencies": {
     "@babel/core": "^7.17.10",
     "@fortawesome/fontawesome": "^1.1.5",
-    "@fortawesome/fontawesome-free-brands": "^5.0.10",
     "@fortawesome/fontawesome-free-regular": "^5.0.10",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/react-fontawesome": "0.1.18",
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.2.5",
@@ -29,7 +29,7 @@
     "raw-loader": "^0.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-photo-gallery": "^8.0.0",
+    "react-photo-album": "^1.13.2",
     "webpack": "^5.72.1"
   },
   "devDependencies": {
