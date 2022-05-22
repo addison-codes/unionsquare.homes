@@ -4,20 +4,6 @@ import faGem from '@fortawesome/fontawesome-free-regular/faGem';
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="logo">
-      {/*<span className="icon fa-diamond"></span>*/}
-      <FontAwesomeIcon icon={faGem} transform="shrink-6" />
-    </div>
-    <div className="content">
-      <div className="inner">
-        <h1>Live at Union Square</h1>
-        <h2>Grand Rapids, MI</h2>
-        <p>
-          Union Square offers the best downtown living experience in Grand Rapids. Historic building, rooftop pool, and incredible location on the
-          west side will make sure you're always happy to be home at Union Square Grand Rapids.
-        </p>
-      </div>
-    </div>
     <nav>
       <ul>
         <li>
@@ -62,6 +48,17 @@ const Header = props => (
         </li>
       </ul>
     </nav>
+
+    <div className="content">
+      <div className="inner">
+        <h1>Live at Union Square</h1>
+        <h2>Grand Rapids, MI</h2>
+        <p>
+          Union Square offers the best downtown living experience in Grand Rapids. Historic building, rooftop pool, and incredible location on the
+          west side will make sure you're always happy to be home at Union Square Grand Rapids.
+        </p>
+      </div>
+    </div>
   </header>
 );
 

@@ -25,18 +25,7 @@
 		> * {
 			@include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
 			position: relative;
-			margin-top: 3.5rem;
 
-			&:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50%);
-				width: _size(border-width);
-				height: calc(3.5rem + 1px);
-				background: _palette(border);
-			}
 		}
 
 		> :first-child {
@@ -76,7 +65,7 @@
 					'opacity #{_duration(article)} ease-in-out'
 				));
 				@include vendor('transition-delay', '0.25s');
-				padding: 3rem 2rem;
+				padding: 2rem;
 				max-height: 40rem;
 				overflow: hidden;
 
@@ -101,7 +90,8 @@
 				list-style: none;
 				padding-left: 0;
 				border: solid _size(border-width) _palette(border);
-				border-radius: _size(border-radius);
+				border-bottom: none;
+				// border-radius: _size(border-radius);
 
 				li {
 					padding-left: 0;
