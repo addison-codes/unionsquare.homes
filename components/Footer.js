@@ -2,6 +2,14 @@ import PropTypes from 'prop-types';
 
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
+              <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('buy');
+            }}
+          >
+            Contact Us
+          </a>
     <h2>Your Union Square Team:</h2>
     <div className="imagebox">
     <a href="javascript:;" onClick={() => { props.onOpenArticle('nick'); }}>

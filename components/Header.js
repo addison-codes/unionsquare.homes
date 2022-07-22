@@ -4,9 +4,9 @@ import faGem from '@fortawesome/fontawesome-free-regular/faGem';
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <nav>
+    {/* <nav>
       <ul>
-        {/* <li>
+        <li>
           <a
             href="javascript:;"
             onClick={() => {
@@ -25,7 +25,7 @@ const Header = props => (
           >
             Perks
           </a>
-        </li> */}
+        </li>
         <li>
           <a
             href="javascript:;"
@@ -47,7 +47,7 @@ const Header = props => (
           </a>
         </li>
       </ul>
-    </nav>
+    </nav> */}
 
     <div className="content">
       <div className="inner">
