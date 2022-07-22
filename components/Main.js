@@ -97,7 +97,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Photo Gallery</h2>
-          <Gallery photos={photos} />
+          <Gallery photos={photos} layout="rows" />
           {close}
         </article>
 
@@ -115,6 +115,10 @@ class Main extends React.Component {
             <div className="field half">
               <label htmlFor="email">Email</label>
               <input type="text" name="email" id="email" />
+            </div>
+            <div className="field">
+              <label htmlFor="email">Phone Number</label>
+              <input type="text" name="phone" id="phone" />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>

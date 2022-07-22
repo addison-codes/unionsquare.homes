@@ -6,7 +6,7 @@ const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <nav>
       <ul>
-        <li>
+        {/* <li>
           <a
             href="javascript:;"
             onClick={() => {
@@ -25,7 +25,7 @@ const Header = props => (
           >
             Perks
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             href="javascript:;"

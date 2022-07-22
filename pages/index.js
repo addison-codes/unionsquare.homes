@@ -93,7 +93,7 @@ class IndexPage extends React.Component {
 
           <div id="bg">
             <video autoPlay muted loop>
-              <source src='/video/BackgroundVideo.mov' type='video/mp4' />
+              <source src='https://polyp-photos.netlify.app/BackgroundVideo.mov' type='video/mp4' />
             </video>
           </div>
         </div>
