@@ -6,6 +6,90 @@
 
 /* Footer */
 
+@mixin fade-transition($element) {
+	-webkit-transition: $element 0.15s ease-in-out;
+	-moz-transition: $element 0.15s ease-in-out;
+	-ms-transition: $element 0.15s ease-in-out;
+	-o-transition: $element 0.15s ease-in-out;
+	transition: $element 0.15s ease-in-out;
+	}
+	
+	.shimmerbutton i {
+	/*   positioning */
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	
+	/*   gradient   */
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 1%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.85) 70%, rgba(255,255,255,0.85) 71%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0.03)), color-stop(30%,rgba(255,255,255,0.85)), color-stop(50%,rgba(255,255,255,0.85)), color-stop(70%,rgba(255,255,255,0.85)), color-stop(71%,rgba(255,255,255,0.85)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+	width: 20%;
+	height: 100%;
+	/*  animating it  */
+	animation: move 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	-webkit-animation: move 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1s;
+	-moz-animation: move 2s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-delay: 1s;
+	-ms-animation: move 2s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-delay: 1s;
+	-o-animation: move 2s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-delay: 1s;
+	}
+	
+	/*  */
+	@keyframes move {
+	0%  { left: 0; opacity: 0; }
+	5% {opacity: 0.0}
+	48% {opacity: 0.2}
+	80% {opacity: 0.0}
+	100% { left: 82%}
+	}
+	
+	@-webkit-keyframes move {
+	0%  { left: 0; opacity: 0; }
+	5% {opacity: 0.0}
+	48% {opacity: 0.2}
+	80% {opacity: 0.0}
+	100% { left: 82%}
+	}
+	
+	@-moz-keyframes move {
+	0%  { left: 0; opacity: 0; }
+	5% {opacity: 0.0}
+	48% {opacity: 0.2}
+	80% {opacity: 0.0}
+	100% { left: 88%}
+	}
+	
+	@-ms-keyframes move {
+	0%  { left: 0; opacity: 0; }
+	5% {opacity: 0.0}
+	48% {opacity: 0.2}
+	80% {opacity: 0.0}
+	100% { left: 82%}
+	}
+	
+	@-o-keyframes move {
+	0%  { left: 0; opacity: 0; }
+	5% {opacity: 0.0}
+	48% {opacity: 0.2}
+	80% {opacity: 0.0}
+	100% { left: 82%}
+	}
+
 	#footer {
 		@include vendor('transition', (
 			'transform #{_duration(article)} ease-in-out',
@@ -25,6 +109,10 @@
 			text-transform: uppercase;
 		}
 
+		h2 {
+			margin-top: 30px;
+		}
+
 		.body.is-article-visible & {
 			@include vendor('transform', 'scale(0.95)');
 			@include vendor('filter', 'blur(0.1rem)');
@@ -39,18 +127,59 @@
 			border-bottom: none;
 		}
 
+		// .contact-button {
+		// 	text-transform: uppercase;
+		// 	font-weight: 600;
+		// 	letter-spacing: _font(letter-spacing);
+		// 	border: 2px solid white;
+		// 	padding: 10px 20px;
+		// 	margin-bottom: 20px;
+
+		// 	&:hover {
+		// 		background-color: black;
+		// 	}
+		// }
+
+
+			.shimmerbutton {
+				/*  styling */
+				display: inline-block;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 5px;
+				color: #fff;
+				padding: 15px;
+				position: relative;
+				text-align: center;
+				border: 2px solid white;
+				@include fade-transition(background);
+				transition: 0.3s;
+
+				&:hover {
+					background-color: rgba(255,255,255,0.3);
+				}
+			}
+
 		.imagebox {
 			display: flex;
 			margin-bottom: 5rem;
 			margin-top: 2rem;
 			gap: 5vw;
 			justify-content: center;
-
+			
 			img {
+				border: 3px solid white;
+				border-radius: 100%;
+				padding: 10px;
 				max-width: 300px;
 				width: 50vw;
 				max-height: 300px;
 				clip-path: circle(50% at center);
+				transition: 0.4s;
+
+				&:hover {
+					padding: 0px;
+				}
 			}
 
 			p {

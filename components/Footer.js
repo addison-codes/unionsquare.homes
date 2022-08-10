@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-              <a
+              <a className='contact-button shimmerbutton'
             href="javascript:;"
             onClick={() => {
               props.onOpenArticle('buy');
             }}
           >
-            Contact Us
+            Contact Us <i></i>
           </a>
     <h2>Your Union Square Team:</h2>
     <div className="imagebox">
