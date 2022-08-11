@@ -51,7 +51,7 @@ const Header = props => (
 
     <div className="content">
       <div className="inner">
-        <h1>Live at Union Square</h1>
+        <h1 className='site-title'>Live at Union Square</h1>
         <h2>Grand Rapids, MI</h2>
         <p>
           Union Square offers the best downtown living experience in Grand Rapids. Historic building, rooftop pool, and incredible location on the

@@ -26,7 +26,7 @@ class Main extends React.Component {
             <img src="/Headshot Nick.jpg" alt="Union Square Nick" />
           </span>
           <p>
-          Hey Neighbor! My name is Nick and I have lived in the building since 2017. I have been in real estate for 5 years and pride myself in being the knowledgeable go-to Realtor in Union Square. If you're thinking about buying or selling in 2022, I'd love to chat. Feel free to contact me about your real estate goals for the new year!
+          Hey Neighbor! My name is Nick and I have lived in the building since 2017. I have been in real estate for 5 years and pride myself in being the knowledgeable go-to Realtor in Union Square. If you're thinking about buying or selling in 2022, I'd love to chat. Feel free to contact me about your real estate goals!
           </p>
           {close}
         </article>

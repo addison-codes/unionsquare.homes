@@ -15,13 +15,13 @@ const Footer = props => (
     <a href="javascript:;" onClick={() => { props.onOpenArticle('nick'); }}>
       <div className="bio">
         <img src="/Headshot Nick.jpg" alt="Nick Headshot" />
-        <p>Nicholas McAnallen</p>
+        <p>Nicholas McAnallen<br />Realtor</p>
       </div>
     </a>
     <a href="javascript:;" onClick={() => { props.onOpenArticle('danielle'); }}>
       <div className="bio">
         <img src="/Danielle Headshot.png" alt="Danielle Headshot" />
-        <p>Danielle Crilley</p>
+        <p>Danielle Crilley<br />Lender</p>
       </div>
     </a>
     </div>
