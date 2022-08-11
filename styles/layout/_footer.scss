@@ -243,6 +243,10 @@
 		}
 	}
 
+	.image.main {
+		max-width: 100px;
+	}
+
 	.imagebox {
 		display: flex;
 		margin-bottom: 5rem;
@@ -250,11 +254,12 @@
 		gap: 5vw;
 		justify-content: center;
 
+
 		img {
 			border: 3px solid white;
 			border-radius: 100%;
 			padding: 10px;
-			max-width: 300px;
+			max-width: 200px;
 			width: 50vw;
 			max-height: 300px;
 			clip-path: circle(50% at center);
