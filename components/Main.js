@@ -2,6 +2,10 @@ import PropTypes from 'prop-types';
 import Gallery from 'react-photo-album';
 import { photos } from './photos';
 import React from 'react';
+import Image from 'next/image'
+
+import nick from '../public/Headshot Nick.jpg'
+import danielle from '../public/Danielle Headshot.png'
 
 class Main extends React.Component {
   render() {
@@ -23,7 +27,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About Nick</h2>
           <span className="image main">
-            <img src="/Headshot Nick.jpg" alt="Union Square Nick" />
+            <Image src={nick} alt="Union Square Nick" layout='fill' />
           </span>
           <p>
           My name is Nick and I have lived in the building since 2017. I have been in real estate for 5 years and pride myself in being the knowledgeable go-to Realtor in Union Square. If you're thinking about buying or selling in 2022, I'd love to chat. Feel free to contact me about your real estate goals!
@@ -38,7 +42,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About Danielle</h2>
           <span className="image main">
-            <img src="/Danielle Headshot.png" alt="Union Square Danielle" />
+            <Image src={danielle} alt="Union Square Danielle" layout='fill' />
           </span>
           <p>
           With over 10 years' experience in finance and banking, Danielle is your local expert for all things mortgage and lending related. Her experience in lending lead her to Treadstone Funding in 2018. Danielle is backed by an incredible team that focuses on the customer experience, transparency, and quick turnaround. As a 2 year resident and owner in Union Square, Danielle is excited to continue to assist her neighbors and friends with their condo purchases and refinances.
@@ -107,7 +111,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact Us</h2>
-          <form method="post" action="#">
+          <form method="post" action="#" netlify>
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />

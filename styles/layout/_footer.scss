@@ -245,6 +245,7 @@
 
 	.image.main {
 		max-width: 100px;
+		max-height: 100px;
 	}
 
 	.imagebox {
@@ -254,8 +255,22 @@
 		gap: 5vw;
 		justify-content: center;
 
-
 		img {
+			border: 3px solid white;
+			border-radius: 100%;
+			padding: 10px;
+			max-width: 200px;
+			width: 50vw;
+			max-height: 300px;
+			clip-path: circle(50% at center);
+			transition: 0.4s;
+
+			&:hover {
+				padding: 0px;
+			}
+		}
+
+		.img {
 			border: 3px solid white;
 			border-radius: 100%;
 			padding: 10px;
