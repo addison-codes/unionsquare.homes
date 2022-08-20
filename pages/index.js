@@ -73,7 +73,7 @@ class IndexPage extends React.Component {
       <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
         <div>
           <Head>
-            <title>Union Square homes | Union Square Grand Rapids</title>
+            <title>Union Square Downtown | Union Square Grand Rapids</title>
             <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i" rel="stylesheet" />
           </Head>
 
@@ -93,7 +93,7 @@ class IndexPage extends React.Component {
 
           <div id="bg">
             <video autoPlay muted loop playsinline="true" disablePictureInPicture="true">
-              <source src='https://polyp-photos.netlify.app/BackgroundVideo.mov' type='video/mp4' />
+              <source src='https://polyp-photos.netlify.app/BackgroundVideoCompressed.mp4' type='video/mp4' />
             </video>
           </div>
         </div>
