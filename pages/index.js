@@ -4,6 +4,8 @@ import React from 'react';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
+import Image from 'next/image';
+import USPhoto from '/public/UnionSquarePhoto.jpg'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -92,9 +94,10 @@ class IndexPage extends React.Component {
           </div>
 
           <div id="bg">
-            <video autoPlay muted loop playsinline="true" disablePictureInPicture="true">
+            <Image src={USPhoto} alt='Union Square Photo' layout='fill' />
+            {/* <video autoPlay muted loop playsinline="true" disablePictureInPicture="true">
               <source src='https://polyp-photos.netlify.app/BackgroundVideoCompressed.mp4' type='video/mp4' />
-            </video>
+            </video> */}
           </div>
         </div>
       </div>
