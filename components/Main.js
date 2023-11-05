@@ -50,7 +50,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article
+        {/* <article
           id="history"
           className={`${this.props.article === 'history' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
@@ -103,7 +103,7 @@ class Main extends React.Component {
           <h2 className="major">Photo Gallery</h2>
           <Gallery photos={photos} layout="rows" />
           {close}
-        </article>
+        </article> */}
 
         <article
           id="buy"
