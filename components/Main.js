@@ -4,8 +4,8 @@ import { photos } from './photos';
 import React from 'react';
 import Image from 'next/image'
 
-import nick from '../public/Headshot Nick.jpg'
-import danielle from '../public/Danielle Headshot.png'
+import nick from '/public/HeadshotNick.jpg'
+import danielle from '/public/DanielleHeadshot.png'
 
 class Main extends React.Component {
   render() {
