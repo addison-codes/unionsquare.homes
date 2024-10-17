@@ -23,15 +23,9 @@ const Footer = props => (
         <p>Nicholas McAnallen<br />Realtor</p>
       </div>
     </a>
-    <a href="javascript:;" onClick={() => { props.onOpenArticle('danielle'); }}>
-      <div className="bio">
-        <Image className='img' src={danielle} alt="Danielle Headshot" objectFit='contain' />
-        <p>Danielle Crilley<br />Lender</p>
-      </div>
-    </a>
     </div>
     <p className="copyright">
-      &copy;2022 | Built by: <a href="https://polyp.dev">Polyp</a>
+      &copy;2024 | Built by: <a href="https://polyp.dev">Polyp</a>
     </p>
   </footer>
 );
